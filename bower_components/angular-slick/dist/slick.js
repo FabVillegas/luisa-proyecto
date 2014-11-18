@@ -101,10 +101,17 @@ angular.module('slick', []).directive('slick', [
         if (scope.initOnload) {
           isInitialized = false;
           return scope.$watch('data', function (newVal, oldVal) {
-            if (newVal != null && !isInitialized) {
-              initializeSlick();
-              return isInitialized = true;
+            if(newVal == null) return false;
+
+            if ( isInitialized )
+            {
+                $(element).slickRemove();
+                $(element).removeClass('slick-initialized slick-slider');
+                $(element).find('.slick-list').remove();
             }
+
+            initializeSlick();
+            return isInitialized = true;
           });
         } else {
           return initializeSlick();

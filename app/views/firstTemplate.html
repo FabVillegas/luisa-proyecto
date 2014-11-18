@@ -1,4 +1,8 @@
 <div ng-controller="firstCtrl">
-	<h1>This is the first template.</h1>
-	<button ng-click="changeState()" type="button">Change to second state</button>
+	<ul rn-carousel>
+		<li class="movie" ng-repeat="movie in moviesList track by $index">
+			<div> {{movie.name}} </div>
+			<div ng-click="printIndex($index)"> <img src="{{movie.image}}"> </div>
+		</li>
+	</ul>
 </div>

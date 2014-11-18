@@ -1,4 +1,4 @@
-angular.module('luisa-proyecto', ['ui.router']).config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+angular.module('luisa-proyecto', ['ui.router', 'slick', 'firebase', 'angular-carousel']).config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('first');
 	$stateProvider.
 	state('first', {
