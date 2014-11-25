@@ -1,8 +1,9 @@
 angular.module('luisa-proyecto').controller('secondCtrl', secondCtrl);
 
-secondCtrl.$inject = ['$scope', '$state'];
+secondCtrl.$inject = ['$scope', '$state', '$firebase'];
+function secondCtrl($scope, $state, $firebase){
 
-function secondCtrl($scope, $state){
+
   $scope.changeState = function(){
     $state.go('first');
   };

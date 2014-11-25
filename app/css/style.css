@@ -10,13 +10,14 @@ body{
   margin: 0 0 50px 0;
   padding: 0;
   background-color: #960000;
-  border-bottom: 10px solid #390000;
 }
 
 #bannerContainer h1{
   margin: 0 0 0 5px;
   height: 100px;
   line-height: 100px;
+  color: #FFFFFF;
+  font-size: 3em;
 }
 
 .categoryTitle{
@@ -25,18 +26,19 @@ body{
 }
 
 ul{ /* contenedor de cada pelicula */
-  height: 400px !important;
+  height: 450px !important;
 }
 
 .movie{
   width: 200px !important;
-  height: 325px !important;
+  height: 400px !important;
   padding: 0 25px 0 25px !important;
   background-size: cover;
   position:relative;
 }
 
 .movieTitle{
+  height: 75px;
   font-size: 1.25em;
   color: #FFFFFF;
 }
@@ -71,6 +73,12 @@ ul{ /* contenedor de cada pelicula */
   display: inline-block;
 }
 
-.starsDiv{
+.bechdelDiv{
+  height: 30px;
+  line-height: 30px;
   display: inline-block;
+}
+
+.bechdelDiv p{
+  margin: 0;
 }
