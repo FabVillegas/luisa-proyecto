@@ -1,20 +1,76 @@
-.movie {
-    background-size: cover;
-    position:relative;
-    width: 250px !important;
-    padding: 0 25px 0 25px !important;
-}
-.movie div {
-    display: inline-block;
-    font-size:10px;
-    width: 100%;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.6);
-    color:white;
-    padding: 5px;
-    box-sizing: border-box;
+body{
+  margin: 5px 5px 0 5px;
+  padding: 0;
+  font-family: 'Arial', Sans-Serif;
+  background-color: #4F4F4F;
 }
 
-ul{
+#bannerContainer{
+  width: 100%;
+  margin: 0 0 50px 0;
+  padding: 0;
+  background-color: #960000;
+  border-bottom: 10px solid #390000;
+}
+
+#bannerContainer h1{
+  margin: 0 0 0 5px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.categoryTitle{
+  margin: 0 0 0 5px;
+  color: #FFFFFF;
+}
+
+ul{ /* contenedor de cada pelicula */
   height: 400px !important;
+}
+
+.movie{
+  width: 200px !important;
+  height: 325px !important;
+  padding: 0 25px 0 25px !important;
+  background-size: cover;
+  position:relative;
+}
+
+.movieTitle{
+  font-size: 1.25em;
+  color: #FFFFFF;
+}
+
+.imgContainer{
+  width: 200px;
+  margin: 0;
+}
+
+.movieImg{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.movieImg:hover{
+  width: 110%;
+  height: auto
+}
+
+.selectedMovieImg{
+  width: 20%;
+  margin: 10px 2.5% 0 2.5%;
+  height: auto;
+  display: inline-block;
+}
+
+.selectedMovieInfo{
+  width: 69%;
+  margin: 10px 2.5% 0 2.5%;
+  height: 500px;
+  display: inline-block;
+}
+
+.starsDiv{
+  display: inline-block;
 }
